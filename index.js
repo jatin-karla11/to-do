@@ -1,4 +1,3 @@
-console.log("Kindly add your Notes");
 displayNotes();
 let addBtn=document.getElementById('addBtn');
 addBtn.addEventListener('click',function(e){
@@ -13,7 +12,6 @@ addBtn.addEventListener('click',function(e){
     notesObj.push(addTxt.value);
     localStorage.setItem("notes",JSON.stringify(notesObj));//display string and takes object
     addTxt.value=" ";//blanks after the user has entered the value
-    console.log(notesObj);
     displayNotes();
 })
 function displayNotes()
